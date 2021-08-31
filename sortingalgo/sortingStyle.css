@@ -1,0 +1,175 @@
+:root{
+    font-size: 16px;
+    font-family: 'Open Sans';
+
+	--bg-secondary: #ececec;
+	--transition-speed: 600ms;
+
+
+    --text-primary: #000000;
+	--text-secondary: #141418;
+
+    
+    --bg-nav: hsl(267, 18%, 90%);
+    --main-background: #FFF7D9;
+
+    --bg-generate: rgb(41, 170, 230);
+    --bg-stop: rgb(230, 63, 41);
+    --bg-start: yellowgreen;
+    
+}
+
+body{
+    color:black;
+    background-color: var(--main-background);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-left: 14rem;
+    position: fixed;
+    height: 80vh;
+    top: 10%;
+    bottom: 10%;
+}
+
+.navbar {
+	width: 14rem;
+	height: 100vh;
+	position: fixed;
+	background-color: var(--bg-nav);
+	transition: width 200ms ease;
+}
+
+.navbar-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.navbar-list:first-child {
+    padding-top: 80%;
+}
+
+.nav-item {
+	width: 100%;
+}
+
+.nav-div {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	height: 5rem;
+	color: var(--text-primary);
+	text-decoration: none;
+	/*filter: grayscale(100%) opacity(0.7);
+	transition: var(--transition-speed);*/
+}
+
+.nav-div:hover {
+	filter: grayscale(0%) opacity(1);
+	background: var(--bg-secondary);
+	color: var(--text-secondary);
+}
+
+.nav-select {
+    width: 100%;
+    height: 35%;
+    margin-right: 2%;
+}
+
+
+.nav-text {
+    display: none;
+    margin-left: 1rem;
+    width: 80%;
+    display: block;
+}
+
+
+
+button {
+    width: 100%;
+    height: 50%;
+}
+
+#startbutton {
+    background-color: var(--bg-start);
+}
+
+#stopbutton {
+    background-color: var(--bg-stop);
+
+}
+
+#generatebutton {
+    background-color: var(--bg-generate);
+}
+
+.slidecontainer {
+    margin-right: 2%;
+}
+
+
+
+
+canvas{
+    /*#b6b6b6*/
+    background-color: var(--main-background);
+    border: 1px;
+    height: 80vh;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-item{
+    margin: .5em;
+    padding: .5em;
+    flex: auto;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover{
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #5a5a5a;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #5a5a5a;
+    cursor: pointer;
+}
+

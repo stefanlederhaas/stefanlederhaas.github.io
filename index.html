@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Stefan Lederhaas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <section class="section one">
+      <div class="container">
+        <div class="column-left" id="left1">
+          <span id="shape1-2"></span>
+          <span id="shape1-2-2"></span>
+          <span class="text-hi">Hi</span>
+          <p class="text" style="margin-left: 10%">
+            I'm<br /><span style="margin-left: 20%">Stefan</span>
+          </p>
+        </div>
+        <div class="column-right">
+          <img src="./images/img-1.jpeg" alt="js" class="image shadow-box" />
+          <span id="shape1-1"></span>
+        </div>
+      </div>
+      <span id="shape1-3"></span>
+      <span class="scroll" id="scroll1"></span>
+    </section>
+    <section class="section aboutme">
+      <div class="container">
+        <div class="column-aboutme">
+          <h1 class="text"><span class="text-hi">About me:</span></h1>
+          <p class="text" id="abouttext">
+            Besides programming there are also various other activities I like
+            to do. One of which is performing music.
+            <br />
+            Specificly: playing the <b>drums</b>! <br />I started playing the
+            drums around 15 years ago and I really enjoy performing songs with
+            one of my bands.
+          </p>
+        </div>
+        <div class="column-bands">
+          <div class="text-hi">Current Bands:</div>
+          <div class="bands-container">
+            <span class="band" id="band1"></span>
+            <span class="band" id="band2"></span>
+            <span class="band" id="band3"></span>
+          </div>
+        </div>
+      </div>
+      <span class="scroll" id="scroll2"></span>
+    </section>
+    <section class="section two">
+      <div class="container">
+        <div class="column-aboutme">
+          <h1 class="text"><span class="text-hi">Programming:</span></h1>
+          <p class="text" id="abouttext">
+            My journey of coding starts in the HTL Kaindorf where I attended the
+            IT department. There I got introduced to various programming
+            languages, design patterns and theoretical computer science. Also I
+            did my final exams in programming and databases.
+          </p>
+        </div>
+        <div class="column-right">
+          <div class="skill-bar shadow-box">
+            <div class="bar">
+              <div class="info">
+                <span>HTML</span>
+              </div>
+              <div class="progress-line html-bar"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>CSS</span>
+              </div>
+              <div class="progress-line css-bar"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>JS</span>
+              </div>
+              <div class="progress-line js-bar"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>React</span>
+              </div>
+              <div class="progress-line react-bar"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>SQL</span>
+              </div>
+              <div class="progress-line sql-bar"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="scroll" id="scroll1"></span>
+    </section>
+    <section class="section three">
+      <div class="container-block">
+        <div class="projects-caption">
+          <h1>Check out one of my projects:</h1>
+        </div>
+        <div class="projects" style="height: 50vh">
+          <div class="project" id="project1-div">
+            <a href="pathalgo-app/src/index.js" target="_blank">
+              <img
+                src="images/gif-project1-1.png"
+                class="shadow-box project-img"
+                id="project1"
+                data-hover="images/gif-project1.gif"
+              />
+              <div class="project-title">Sorting Visualization</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <span class="scroll" id="scroll2"></span>
+    </section>
+    <section class="section contact">
+      <div class="container">
+        <div class="column-left">
+          <div class="social-box">
+            <h2>Follow here:</h2>
+            <div>
+              <a
+                href="https://www.facebook.com/profile.php?id=100004167708025"
+                target="_blank"
+                ><img
+                  alt="facebook-icon"
+                  src="images/facebook.png"
+                  class="social-icon"
+              /></a>
+              <a
+                href="https://www.instagram.com/stefanlederhaas/"
+                target="_blank"
+                ><img
+                  alt="insta-icon"
+                  src="images/insta.png"
+                  class="social-icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="column-right">
+          <div class="contact-box shadow-box">
+            <form method="POST" action="test.php">
+              <h2>Contact me</h2>
+              <input
+                name="name"
+                type="text"
+                class="field"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                name="email"
+                type="email"
+                class="field"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                class="field area"
+                placeholder="Your message to me ^^"
+                required
+              ></textarea>
+              <input
+                type="submit"
+                onclick="showAlert()"
+                name="send"
+                class="btn"
+                value="Send"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
