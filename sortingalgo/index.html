@@ -1,73 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sorting Algorithms</title>
 
-    <link rel="stylesheet" type="text/css" href="sortingStyle.css" media="screen" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="sortingStyle.css"
+      media="screen"
+    />
     <script src="sortingAlgosJS.js"></script>
+  </head>
 
-</head>
-
-<body onload="init()">
+  <body onload="init()">
     <nav class="navbar">
-        <ul class="navbar-list">
-            <li class="nav-item">
-                <div class="nav-div">
-                    <span class="nav-text">Algortihmus:</span>
-                    <select class="nav-select" name="SortingAlgo" id="sortingAlgo">
-                        <option>Bubble-Sort</option>
-                        <option>Quick-Sort</option> 
-                    </select>
-                </div>
-            </li>
-            <li class="nav-item">
-                <div class="nav-div">
-                    <span class="nav-text">Display:</span>
-                    <select class="nav-select" name="DisplayType" id="displayType" onchange="init()">
-                        <option>Column</option>
-                        <option>Music-Notes</option>
-                    </select>
-                </div>
-            </li>
-            <li class="nav-item">
-                <div class="nav-div">
-                    <span class="nav-text">Size:</span>
-                    <div class="slidecontainer">
-                        <input type="range" min="10" max="50" value="20" class="slider" id="sizeRange">
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <div class="nav-div">
-                    <span class="nav-text">Speed:</span>
-                    <div class="slidecontainer">
-                        <input type="range" min="1" max="18" value="5" class="slider" id="speedRange">
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <div class="nav-div">
-                    <button id="generatebutton" onclick="setupArray()">generate New</button>
-                </div>
-            </li>
-            <li class="nav-item">
-                <div class="nav-div">
-                    <button id="stopbutton"  disabled="disabled" onclick="stop()">Stop</button>
-                </div>
-            </li>
-            <li class="nav-item">
-                <div class="nav-div">
-                    <button id="startbutton" onclick="start()">Start</button>
-                </div>
-            </li>
-        </ul>
+      <ul class="navbar-list">
+        <li class="nav-item">
+          <div class="nav-div">
+            <span class="nav-text">Algortihmus:</span>
+            <select class="nav-select" name="SortingAlgo" id="sortingAlgo">
+              <option>Bubble-Sort</option>
+              <option>Quick-Sort</option>
+            </select>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="nav-div">
+            <span class="nav-text">Size:</span>
+            <div class="slidecontainer">
+              <input
+                type="range"
+                min="10"
+                max="50"
+                value="20"
+                class="slider"
+                id="sizeRange"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="nav-div">
+            <span class="nav-text">Speed:</span>
+            <div class="slidecontainer">
+              <input
+                type="range"
+                min="1"
+                max="18"
+                value="5"
+                class="slider"
+                id="speedRange"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="nav-div">
+            <button id="generatebutton" onclick="setupArray()">
+              generate New
+            </button>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="nav-div">
+            <button id="stopbutton" disabled="disabled" onclick="stop()">
+              Stop
+            </button>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="nav-div">
+            <button id="startbutton" onclick="start()">Start</button>
+          </div>
+        </li>
+      </ul>
     </nav>
 
     <main id="canvasSection">
-        <canvas id="canvas"></canvas>
+      <canvas id="canvas"></canvas>
     </main>
-</body>
+  </body>
 </html>
