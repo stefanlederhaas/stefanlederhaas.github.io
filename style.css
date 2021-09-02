@@ -174,11 +174,15 @@ Other stuff
   color: #fff;
 }
 
-.text-hi {
+.text-yellow {
   font-size: 2.5rem;
   font-weight: bold;
   color: #fccd04;
   text-shadow: 2.5px 2.5px 2px #a78903;
+}
+
+#text-hi {
+  margin-left: -10rem;
 }
 
 .container {
@@ -195,6 +199,11 @@ Other stuff
 .container-table {
   display: table;
   border-spacing: 0.5em;
+}
+
+#mypic-container {
+  position: relative;
+  text-align: center;
 }
 
 /*---------------------------------------------------
@@ -295,7 +304,7 @@ About me
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   color: #000;
   padding: 0rem 2rem;
 }
@@ -315,11 +324,9 @@ About me
 .column-aboutme {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   color: #000;
-  margin-left: 5vw;
-  margin-top: 20%;
   padding: 2rem;
 }
 
